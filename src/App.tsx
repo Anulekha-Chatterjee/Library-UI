@@ -1,26 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import Nav from "./Nav";
+import Find from "./Find";
+import Books from "./Books";
+import "./App.css";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Nav />
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/find" component={Find} />
+          <Route path="/books" component={Books} />
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
+const Home = () => (
+  <div>
+    <h1>Our Library</h1>
+    <p> Welcome to our Library! </p>
+    <p>Digital libraries are libraries that house digital resources.</p>
+    <p>Click on "Books" to add or remove books.</p>
+    <p>Click on "Find Books" to find a particular book.</p>
+  </div>
+);
 export default App;

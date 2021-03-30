@@ -1,0 +1,97 @@
+{
+    "id": "f3739e26-c9ea-4260-b695-7bbbe356fca6",
+    "name": "AggregationGridConfig",
+    "namespace": "DataAggregation",
+    "contexts": {
+        "user": "b24fb8e1-d1ba-46f0-9912-e86eb7e867ca",
+        "application": "3059"
+    },
+    "properties": [
+        {
+            "header": "Select",
+            "accessor": "isSelect",
+            "editable": true,
+            "editor": "boolean",
+            "className": "",
+            "headerClassName": "k-header-checkbox",
+            "visible": true,
+            "resizable": false,
+            "groupable": false
+        },
+        {
+            "header": "Type",
+            "accessor": "type",
+            "editable": false,
+            "className": "grid-type-column-cell",
+            "headerClassName": "",
+            "visible": true,
+            "width": 120,
+            "columnMenu": "columnMenuCheckboxFilter",
+            "groupable": true
+        },
+        {
+            "header": "New Tag",
+            "accessor": "acquiredTag",
+            "editable": false,
+            "className": "",
+            "headerClassName": "",
+            "visible": false,
+            "columnMenu": "columnMenuFilter",
+            "groupable": true
+        },
+        {
+            "header": "Existing Tag",
+            "accessor": "digitalTwinElement",
+            "editable": true,
+            "cell": "DigitalTwinTagDropDown",
+            "className": "",
+            "headerClassName": "",
+            "visible": false,
+            "columnMenu": "columnMenuFilter",
+            "groupable": false
+        },
+        {
+            "header": "Parent Tag",
+            "accessor": "parentTag",
+            "editable": false,
+            "className": "",
+            "headerClassName": "",
+            "visible": false,
+            "columnMenu": "columnMenuFilter",
+            "groupable": true
+        },
+        {
+            "header": "New Class",
+            "accessor": "acquiredClassDisplayLabel",
+            "editable": false,
+            "className": "",
+            "headerClassName": "",
+            "visible": true,
+            "columnMenu": "customColumnMenu",
+            "groupable": true
+        },
+        {
+            "header": "Existing Class",
+            "accessor": "digitalTwinClass",
+            "editable": true,
+            "cell": "DigitalTwinClassDropDown",
+            "className": "",
+            "headerClassName": "",
+            "visible": false,
+            "columnMenu": "customColumnMenu",
+            "groupable": false
+        },
+        {
+            "header": "Status",
+            "accessor": "tagStatus",
+            "editable": false,
+            "cell": "StatusCell",
+            "className": "",
+            "headerClassName": "",
+            "visible": false,
+            "columnMenu": "columnMenuCheckboxFilter",
+            "groupable": false
+        }
+    ],
+    "_ts": 1595422240
+}
